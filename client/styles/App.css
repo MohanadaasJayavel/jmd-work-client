@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .App {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .task-form input, .task-form select, .task-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .task-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  
+  .task-column {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  .task-column h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .task-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .task-card h3 {
+    margin: 0;
+  }
+  
+  .task-card p {
+    margin: 0.5rem 0;
+  }
+  
+  .task-card button {
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-card button:first-child {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .task-card button:last-child {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .task-grid {
+      flex-direction: column;
+    }
+  }
+
+  /* General styles */
+body, html, #root, .App {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f2f5;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Task Grid */
+  .task-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 20px;
+  }
+  
+  .task-column {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+  }
+  
+  /* Task Card */
+  .task-card {
+    position: relative;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .task-card h3 {
+    margin: 0;
+    color: #333333;
+  }
+  
+  .task-card p {
+    font-size: 0.9em;
+    color: #666666;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content input,
+  .modal-content textarea,
+  .modal-content select {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .modal-content button {
+    margin-top: 10px;
+  }
+  
+  
